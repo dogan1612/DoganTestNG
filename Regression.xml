@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" verbose="1">
+    <test name="Regression">
+        <classes>
+            <class name="Component.Tests.SmokeTestA"/>
+            <class name="Component.Tests.LoginTests">
+                <methods>
+                    <exclude name="loginWithParameters"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+

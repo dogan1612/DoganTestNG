@@ -1,0 +1,37 @@
+<suite name="ParameterTestSuite" verbose="1">
+    <!-- This parameter will be passed to every test in this suite -->
+    <parameter name="suite-level-parameter" value="Selam" />
+    <test name="Parameter Test one">
+        <classes>
+            <class name="Study.Annotations.Parameters.ParameterTest">
+                <methods>
+                    <include name="TestOne" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="test-level-parameter">
+        <!-- This parameter will be passed this test only -->
+        <parameter name="test-level-parameter" value="Dunyali" />
+        <classes>
+            <class name="Study.Annotations.Parameters.ParameterTest">
+                <methods>
+                    <include name="TestTwo" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Parameter Test three">
+        <!-- Overriding suite level parameter -->
+        <parameter name="suite-level-parameter" value="Hi" />
+        <!-- Test specific parameter -->
+        <parameter name="test-three-param" value="test three parameter" />
+        <classes>
+            <class name="Study.Annotations.Parameters.ParameterTest">
+                <methods>
+                    <include name="TestThree" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

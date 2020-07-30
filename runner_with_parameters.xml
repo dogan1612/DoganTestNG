@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite2" verbose="1">
+    <test name="Login test with parameters">
+        <parameter name="username" value="student23@library"/>
+        <parameter name="password" value="WCeRjitW"/>
+        <classes>
+            <class name="Component.Tests.LoginTests">
+<!--                <methods>-->
+<!--                    <include name="loginWithParameters"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>

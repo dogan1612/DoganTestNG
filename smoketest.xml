@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Suite2" verbose="1" >
+    <test name="Smoke Tests" >
+        <parameter name="test" value="smoke"></parameter>
+        <classes>
+            <class name="Component.Tests.SmokeTestA" />
+            <class name="Component.Tests.SmokeTestB" />
+        </classes>
+    </test>
+</suite>

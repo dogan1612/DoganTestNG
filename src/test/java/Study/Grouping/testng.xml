@@ -1,0 +1,22 @@
+<suite name="Multi Group Suite" verbose="1">
+    <test name="Group Test One">
+        <groups>
+            <run>
+                <include name="group-one" />
+            </run>
+        </groups>
+        <classes>
+            <class name="Study.Grouping.MultiGroupExample" />
+        </classes>
+    </test>
+    <test name="Group Test Two">
+        <groups>
+            <run>
+                <include name="group-two" />
+            </run>
+        </groups>
+        <classes>
+            <class name="Study.Grouping.MultiGroupExample" />
+        </classes>
+    </test>
+</suite>

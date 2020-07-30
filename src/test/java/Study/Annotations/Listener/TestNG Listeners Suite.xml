@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Listeners Suite" parallel="false">
+
+    <listeners>
+        <listener class-name="Study.Annotations.Listener.TestNGListener"/>
+    </listeners>
+    <test name="Test">
+        <classes>
+            <class name="Study.Annotations.Listener.TestCases"/>
+        </classes>
+    </test>
+</suite>
+
+<!--
+    Instead of adding @Listeners(..) to every class,
+    we can create a test suit (xml file) and add Listeners tag to suite
+-->
